@@ -69,6 +69,14 @@ function my_keydown (e) {
     if (keyPressed == '68') {
         car2_right ();
     }
+    if (car1_x > 700)
+    { console.log("Car 1 won")
+document.getElementById("game_status").innerHTML = "Car 1 Won!!";
+}
+if (car2_x > 700)
+    { console.log("Car 2 won")
+document.getElementById("game_status").innerHTML = "Car 2 Won!!";
+}
 }
 function car1_up()
 {
